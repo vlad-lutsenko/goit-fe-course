@@ -1,0 +1,38 @@
+.container {
+  width: 1200px;
+  background: #ffffff;
+  margin: 0 150 0 150;
+  }
+.blue-link {color: #03a9f4;
+  font-size: 14px;
+  line-height: 24px;}
+.link {color: #626262;
+  font-size: 14px;
+  line-height: 24px;}
+.image-description {color: #b4ad9e;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  text-transform: uppercase;}
+.article-text {font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  width: 421px;}
+li {display: inline-block; 
+  margin-bottom: 103px;}
+ul {list-style-type: none;
+  text-transform: uppercase;}
+article {display: inline-block;
+  width: 420px;}
+button {
+  margin: auto;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  width: 164;
+  height: 60;
+  border: 1px solid #626262;
+  }
+h2 {font-size: 30px;
+  line-height: 36px;
+  color: #626262;}
