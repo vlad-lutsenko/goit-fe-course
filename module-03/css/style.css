@@ -47,4 +47,4 @@ img {margin-bottom: 31px;}
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 26px;}
-a:hover {color: #25b4f5}
+a:hover, a:focus {color: #25b4f5}
