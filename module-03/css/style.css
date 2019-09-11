@@ -6,7 +6,7 @@
   line-height: 24px;}
 header {padding-top: 72px;
   padding-bottom: 98px;}
-  section :nth-child(2n) {margin-right: 0;}
+section {padding-bottom: 70px;}
 li {display: inline-block;}
 article {display: inline-block;
   width: 420px;
@@ -14,13 +14,13 @@ article {display: inline-block;
   margin-bottom: 130px;
   }
 button {display: block;
-  margin: 58px auto 70px;
   background-color: #ffffff;
   font-size: 20px;
   line-height: 24px;
   width: 165px;
   height: 60px;
   border: 1px solid;
+  margin: auto;
   }
 h2 {font-size: 30px;
   line-height: 36px;
@@ -29,17 +29,14 @@ img {margin-bottom: 31px;}
 .container {
   margin: 0 auto;
   width: 901px;
-  background: #ffffff;
-  font-size: 0;  }
-.container :nth-child(n+5):nth-child(-n+6) {margin-bottom: 0;}
+  background: #ffffff;}
+.columns {font-size: 0;}
 .navigation {list-style-type: none;
   text-transform: uppercase;
-  padding: 0 100px 0 100px;
   text-align: center;
   font-size: 0;}
 .link {
   display: block;
-  width: 165px;
   text-decoration: none;
   text-align: center;}
 .image-description {
@@ -49,5 +46,8 @@ img {margin-bottom: 31px;}
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 26px;}
+.navigation li:not(:last-child){
+  margin-right: 60px;}
 a:hover, a:focus {color: #25b4f5}
+section :nth-child(2n) {margin-right: 0;}
 button:hover, button:focus{color: #25b4f5}
