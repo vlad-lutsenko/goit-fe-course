@@ -11,7 +11,7 @@ li {display: inline-block;}
 article {display: inline-block;
   width: 420px;
   margin-right: 60px;
-  margin-bottom: 130px;
+
   }
 button {display: block;
   background-color: #ffffff;
@@ -46,8 +46,9 @@ img {margin-bottom: 31px;}
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 26px;}
-.navigation li:not(:last-child){
-  margin-right: 60px;}
+.columns article:not(:nth-last-of-type(-n+2)){margin-bottom: 130px;} 
+.columns article:nth-last-of-type(-n+2){margin-bottom: 52px;}
+.navigation li:not(:last-child){margin-right: 60px;}
 a:hover, a:focus {color: #25b4f5}
 section :nth-child(2n) {margin-right: 0;}
 button:hover, button:focus{color: #25b4f5}
