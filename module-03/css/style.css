@@ -10,9 +10,7 @@ section {padding-bottom: 70px;}
 li {display: inline-block;}
 article {display: inline-block;
   width: 420px;
-  margin-right: 60px;
-
-  }
+  margin-right: 60px;}
 button {display: block;
   background-color: #ffffff;
   font-size: 20px;
