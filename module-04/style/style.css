@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .logo {
+   float: left;
+ }
+.container {
+  margin: auto;
+  width: 1170px;
+  padding: 37px 15px 46px 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container::after {
+clear: both;
+}
+.navigation {
+  float: right;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-item {
+  float: left;
+}
+.navigation-item-link {
+  text-decoration: none;
+}
+.logo-link {
+  text-decoration: none;
+}
+.goods-item {
+  width: 285px;
+  padding: 0 15px;
+  float: left;
+  list-style: none;
+}
+.article {
+  width: 380px;
+  float: left;
+  padding: 0 15px;
+  text-transform: none;
+}
+.article-tittle {
+  text-align: left;
+}
+.article-text {
+  text-align: left;
+}
