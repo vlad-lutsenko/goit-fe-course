@@ -7,19 +7,18 @@
    float: left;
    width: 110px;
    padding: 0 15px 0 15px;
-   font-family: "roboto light";
-   color: #555252;
-   font-size: 30px;
-   line-height: 32px;
  }
  .logo::first-letter {
    color: #1abc9c;
  }
 .container {
-  margin: auto;
+  margin: 35px auto 100px;
   width: 1170px;
-  padding: 37px 15px 81px 15px;
+  padding: 0 15px;
   text-transform: uppercase;
+}
+.navigation {
+  padding: 0 15px;
 }
 .navigation-list {
   list-style: none;
@@ -33,6 +32,13 @@
 .navigation-item-link:hover {
   color: #1abc9c;
 }
+.logo-link {
+  font-family: 'roboto', sans-serif;
+  font-weight: 300;
+  color: #555252;
+  font-size: 30px;
+  line-height: 32px;
+}
 .logo-link:hover {
   color: #1abc9c;
 }
@@ -41,14 +47,15 @@
   color: #0f0101;
   font-size: 14px;
   line-height: 11px;
-  font-family: "open sans bold";
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 700;
 }
 .logo-link {
   text-decoration: none;
 }
 .featured.products {
   text-align: center;
-  font-family: "roboto black", "sans-serif";
+ 
 }
 .goods-item {
   width: 285px;
@@ -57,6 +64,15 @@
   float: left;
   list-style: none;
   margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.goods-item:hover .goods-item-description {
+  background-color: #1abc9c;
+}
+.goods-item:hover .goods-item-price {
+  background-color: #1abc9c;
+  filter: opacity(50%);
 }
 .clearfix::after {
   content: "";
@@ -71,6 +87,9 @@
   text-align: left;
   background-color: #323232;
   color: #fff;
+  padding-top: 4px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
 }
 .goods-item-price {
   width: 55px;
@@ -79,6 +98,9 @@
   text-align: center;
   background-color: #8c8c8c;
   color: #fff;
+  padding-top: 4px;
+  font-family: "roboto", sans-serif;
+  font-weight: 900;
 }
 .article {
   width: 380px;
@@ -86,20 +108,34 @@
   padding: 0 15px;
   text-transform: none;
 }
-.article-tittle {
+.article.tittle {
   text-align: left;
-  flex-flow: "open sans semibold"
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
 }
 .article-text {
   text-align: left;
-  font-family: "open sans";
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
 }
 h2 {
   text-align: center;
-  font-family: "roboto black", "sans-serif";
+  font-family: "roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #515151;
 }
 button {
   width: 160px;
   height: 50px;
-  flex-flow: "open sans light"
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+
+}
+section {
+  margin-bottom: 100px;
 }
