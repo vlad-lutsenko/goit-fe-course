@@ -122,7 +122,6 @@
   padding: 15px 0 15px;
   color: #555252;
 }
-
 .article-text {
   text-align: left;
   font-size: 14px;
@@ -141,7 +140,6 @@ h2 {
   margin-bottom: 120px;
   color: #515151;
 }
-
 h2::after {
   display: block;
   width: 165px;
@@ -152,20 +150,19 @@ h2::after {
   margin-top: 32px;
 }
 .read-more {
+  text-align: center;
+  display: block;
   width: 160px;
   height: 50px;
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 50px;
   background-color: #1abc9c;
   color: #ffffff;
   margin-bottom: 80px;
   text-decoration: none;
 }
-/* nav {
-  padding: 0 15px;
-} */
 .article h3::after {
   display: block;
   width: 136px;
