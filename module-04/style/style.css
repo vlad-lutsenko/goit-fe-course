@@ -48,6 +48,7 @@
   font-family: 'Open sans', sans-serif;
   font-weight: 700;
   display: block;
+  padding-top: 10px;
 }
 .featured-products {
   text-align: center;
