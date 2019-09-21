@@ -16,6 +16,7 @@
 .navigation {
   padding: 35px 15px 0 15px;
   margin-bottom: 105px;
+  text-transform: uppercase;
 }
 .navigation-list {
   list-style: none;
@@ -53,6 +54,7 @@
 .featured-products {
   text-align: center;
   margin-bottom: 105px;
+  text-transform: uppercase;
 }
 .goods-item {
   width: 255px;
@@ -132,6 +134,7 @@
   margin-bottom: 20px;
 }
 h2 {
+  text-transform: uppercase;
   text-align: center;
   font-family: "roboto", sans-serif;
   font-weight: 900;
