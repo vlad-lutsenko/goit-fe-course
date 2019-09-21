@@ -58,8 +58,7 @@
 }
 .goods-item {
   width: 255px;
-  height: 382px;
-  /* не можу зрозуміти, чому висота гудс-айтема має бути 382рх */
+  height: 362px;
   float: left;
   list-style: none;
 }
@@ -121,8 +120,11 @@
   line-height: 26px;
   font-family: 'Open sans', sans-serif;
   font-weight: 600;
-  padding: 15px 0 15px;
   color: #555252;
+  margin-bottom: 15px;
+}
+.article img {
+  margin-bottom: 15px;
 }
 .article-text {
   text-align: left;
@@ -172,7 +174,7 @@ h2::after {
   height: 3px;
   content: "";
   background: #1abc9c;
-  margin: 15px 0 15px;
+  margin-top: 15px;
 }
 img {
   display: block;
