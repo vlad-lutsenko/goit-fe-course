@@ -58,11 +58,9 @@
 }
 .goods-item {
   width: 255px;
-  height: 322px;
   float: left;
   list-style: none;
   height: auto;
-  overflow: hidden;
 }
 .goods-item:not(:nth-of-type(4n)) {
   margin-right: 30px;
