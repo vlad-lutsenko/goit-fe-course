@@ -159,6 +159,7 @@ img {
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+  text-transform: uppercase;
   width: 255px;
   height: 322px;
 }
