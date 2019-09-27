@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1110px;
-  margin: auto;
+  margin: 0 auto;
 } 
 .navigation {
   height: 90px;
@@ -14,7 +19,6 @@
 .company {
   display: inline-block;
   margin-right: 555px;
-  
 }
 .company-link {
   text-decoration: none;
@@ -49,11 +53,8 @@
 .navigation-menu-item:not(:last-child) {
   margin-right: 25px;
 }
-.menu-item-link:hover {
+.menu-item-link:hover, :focus {
   color: #1abc9c;
-}
-.slider {
-  margin-bottom: 100px;
 }
 .slider-item {
   height: 600px;
@@ -61,19 +62,22 @@
   background-image:
   linear-gradient(to top, rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)),
   url(../img/tour/tour-girls.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slider-item-menu button {
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
+  background-color: rgba(78, 198, 171, 0.651);
   position: absolute;
   width: 104px;
   height: 104px;
   border: none;
 }
+.slider-item-menu button img {
+  margin: auto;
+}
 .previous {
-  top: 255px;
+  top: 225px;
   left: 0;
 }
 .next {
@@ -96,8 +100,9 @@
   color: #ff7200;
   font-size: 60px;
   line-height: 82px;
+  white-space: nowrap;
 }
-.slider:hover .tour{
+.slider :hover .tour{
   color: #ffffff;
 }
 .tour-list-item {
@@ -113,6 +118,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+}
+.new-collection {
+  background-color: #e9f0fd;
+  padding: 100px 0 100px 0;
 }
 .nc-tittle {
   font-family: 'roboto', sans-serif;
@@ -133,17 +142,16 @@
   margin: auto;
   margin-top: 32px;
 }
+.nc-list {
+  font-size: 0;
+}
+.nc-list :not(:last-child) {
+  margin-right: 30px;
+}
 .nc-item {
   display: inline-block;
   list-style: none;
-  font-size: 0;
-  width: 255px;
-  height: 322px;
-  margin-bottom: 102px;
   position: relative;
-}
-.nc-item :not(:last-child) {
-  margin-right: 30px;
 }
 .nc-desription {
   font-family: 'roboto', sans-serif;
@@ -151,29 +159,68 @@
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
-  height: 40px;
-  padding-top: 4px;
+  width: 255px;
+  height: 322px;
+}
+.nc-name {
   background-color: #323232;
   padding-left: 13px;
   width: 200px;
-}
-.nc-price {
-  font-family: 'roboto', sans-serif;
-  font-weight: 900; 
-  font-size: 18px;
-  line-height: 32px;
-  color: #ffffff;
   height: 40px;
   padding-top: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nc-price {
   width: 55px;
+  height: 40px;
   text-align: center;
   background-color: #8c8c8c;
+  padding-top: 4px;
   position: absolute;
-  top: 282px;
-  left:200px;
+  bottom: 0;
+  right: 0;
+}
+.overlay {
+  border-width: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(0, 0, 0);
+  /* opacity: 0; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 282px;
+  z-index: 1;
+}
+.icons {
+  font-size: 0;
+  width: 165px;
+  height: 50px;
+  margin: auto;
+}
+.icons :not(:last-child) {
+  margin-right: 5px;
+}
+.icons-item {
+  display: inline-block;
+}
+.icons-item button {
+  width: 50px;
+  height: 50px;
+  border-width: 1px;
+  border-color: #ffffff;
+  background: transparent;
+}
+.nc-item :hover .overlay{
+  opacity: 0.549;
 }
 .footer {
   background-color: #323232;
+  height: 88px;
+  padding-top: 20px;
 }
 .footer-text {
   font-family: 'open sans', sans-serif;
