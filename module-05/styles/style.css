@@ -2,16 +2,23 @@
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 .container {
   width: 1110px;
   margin: auto;
 } 
 .navigation {
   height: 90px;
+  padding-top: 35px;
 }
 .company {
   display: inline-block;
   margin-right: 555px;
+  
 }
 .company-link {
   text-decoration: none;
@@ -32,6 +39,7 @@
 }
 .navigation-menu-item {
   display: inline-block;
+  font-size: 0;
 }
 .menu-item-link {
   text-transform: uppercase;
@@ -48,14 +56,19 @@
 .menu-item-link:hover {
   color: #1abc9c;
 }
-.slider-item {
-  width: 1600px;
-  height: 600px;
-  margin: auto;
-  position: relative;
-  background: url(../img/tour/tour-girls.jpg);
+.slider {
+  margin-bottom: 100px;
 }
-.slider-item button {
+.slider-item {
+  height: 600px;
+  list-style: none;
+  background-image:
+  linear-gradient(to top, rgba(0, 0, 2, 0.52), rgba(0, 0, 2, 0.52)),
+  url(../img/tour/tour-girls.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.slider-item-menu button {
   background-color: rgb(78, 198, 171);
   opacity: 0.651;
   position: absolute;
@@ -64,15 +77,18 @@
   border: none;
 }
 .previous {
-  top: 225px;
-  left: 245px;
+  top: 255px;
+  left: 0;
 }
 .next {
   top: 225px;
-  right : 245px;
+  right : 0;
 }
 .slider-item-menu {
-  width: 790px;
+  position: relative;
+  height: 600px;
+}
+.tour-menu {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -90,8 +106,6 @@
 }
 .tour-list-item {
   display: inline-block;
-}
-.tour-list-item span {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 24px;
@@ -103,8 +117,44 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 24px;
-  line-height: 54px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+}
+.nc-tittle {
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #515151;
+  margin-bottom: 116px;
+}
+.nc-item {
+  display: inline-block;
+  list-style: none;
+  font-size: 0;
+  width: 255px;
+  height: auto;
+  margin-bottom: 102px;
+}
+.nc-item :not(:last-child) {
+  margin-right: 30px;
+}
+.descr {
+  font-family: 'roboto', sans-serif;
+  font-weight: 900; 
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  height: 40px;
+  padding-top: 4px;
+}
+.nc-desription {
+  background-color: #323232;
+  padding-left: 13px;
+  width: 200px;
+}
+.nc-price {
+  width: 55px;
+  text-align: center;
+  background-color: #8c8c8c;
 }
