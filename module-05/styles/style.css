@@ -145,18 +145,15 @@ img {
   margin: auto;
   margin-top: 32px;
 }
-.nc-list {
-  font-size: 0;
-}
 .nc-list :not(:last-child) {
   margin-right: 30px;
 }
 .nc-item {
-  display: inline-block;
+  float: left;
   list-style: none;
   position: relative;
-}
-.nc-desription {
+  width: 255px;
+  height: 322px;
   font-family: 'roboto', sans-serif;
   font-weight: 900; 
   font-size: 18px;
@@ -187,10 +184,11 @@ img {
   right: 0;
 }
 .overlay {
+  background-clip: padding-box;
   border-width: 10px;
-  border-color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.549);
   border-style: solid;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.549);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -198,17 +196,14 @@ img {
   width: 255px;
   height: 282px;
   z-index: 1;
-}
-.overlay-menu {
-  position: absolute;
-  top: 80px;
-  left: 35px;
+  padding: 80px 0 0 35px;
 }
 .icons {
   font-size: 0;
   width: 166px;
   height: 50px;
   margin-bottom: 5px;
+  list-style: none;
 }
 .icons :not(:last-child) {
   margin-right: 8px;
@@ -216,42 +211,45 @@ img {
 .icons-item {
   display: inline-block;
 }
-.not-arrow {
+.button-icon {
   width: 50px;
   height: 50px;
   border-width: 1px;
   border-color: #ffffff;
   background: transparent;
-  padding: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.heart {
+  background-image: url(../img/icons/heart.png);
 }
 .arrows {
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: #1abc9c;
-  padding: 12px;
+  background-image: url(../img/icons/arrows.png);
 }
-.icon-button{
+.clock {
+  background-image: url(../img/icons/time.png);
+}
+.big-button-icon {
   display: inline-block;
+  padding-left: 50px;
   width: 166px;
   height: 50px;
   border-width: 1px;
   border-color: #fff;
   background-color: #323232;
+  background-image: url(../img/icons/trolley.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
 }
-.icon-button span {
+.big-button-icon span {
   font-family: 'open sans', sans-serif;
   font-size: 14px;
   line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
 }
-.icon-button img {
-  display: inline-block;
-  vertical-align: middle;
-}
 .nc-item:hover .overlay{
-  background-color: rgba(0, 0, 0, 0.549);
   opacity: 1;
 }
 .nc-item:hover .nc-name {
@@ -261,10 +259,13 @@ img {
   background-color: #1abc9c;
   filter: opacity(50%);
 }
+.button-icon:hover, .big-button-icon:hover {
+  background-color :#1abc9c;
+  border-color: #1abc9c;
+}
 .footer {
   background-color: #323232;
-  height: 88px;
-  padding-top: 20px;
+  padding: 30px 0 30px 0;
 }
 .footer-text {
   font-family: 'open sans', sans-serif;
