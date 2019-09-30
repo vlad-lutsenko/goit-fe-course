@@ -13,12 +13,10 @@ img {
   margin: 0 auto;
 } 
 .navigation {
-  height: 90px;
-  padding-top: 35px;
+  padding: 35px 0 30px 0;
 }
 .company {
   display: inline-block;
-  margin-right: 555px;
 }
 .company-link {
   text-decoration: none;
@@ -35,17 +33,18 @@ img {
   color: #1abc9c;
 }
 .navigation-menu {
-  display: inline-block;
+  float: right;
 }
 .navigation-menu-item {
-  display: inline-block;
-  font-size: 0;
+  float: left;
+  list-style: none;
 }
 .menu-item-link {
+  display: block;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  line-height: 11px;
+  line-height: 32px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #0f0101;
@@ -53,7 +52,7 @@ img {
 .navigation-menu-item:not(:last-child) {
   margin-right: 25px;
 }
-.menu-item-link:hover, :focus {
+.menu-item-link:hover, .menu-item-link:focus {
   color: #1abc9c;
 }
 .slider-item {
