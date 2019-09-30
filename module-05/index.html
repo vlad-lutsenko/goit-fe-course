@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="clearfix">
     <nav class="navigation container">
       <h2 class="company">
         <a href="" class="company-link">mart</a>
@@ -41,27 +41,19 @@
   </header>
 
   <main>
-    <section>
-      <ul class="slider">
+    <section class="slider">
+      <div class="container">
+        <button class="previous slider-button"></button>
+        <button class="next slider-button"></button>
+      </div>
+      <ul class="slider-list">
         <li class="slider-item">
           <div class="slider-item-menu container">
-            <button class="previous"><img src="img/tour/prev.png" alt="previous slide"></button>
-            <button class="next"><img src="img/tour/next.png" alt="next slide"></button>
             <div class="tour-menu">
-              <p class="tour">AFFORDABLE PARIS TOURS</p>
-              <ul>
-                <li class="tour-list-item">
-                  <a href="" class="tour-list-item-link">CITY TOURS</a>
-                  <span>&#47;</span>
-                </li>
-                <li class="tour-list-item">
-                  <a href="" class="tour-list-item-link">TOUR TICKETS</a>
-                  <span>&#47;</span>
-                </li>
-                <li class="tour-list-item">
-                  <a href="" class="tour-list-item-link">TOUR GUIDES</a>
-                </li>
-              </ul>
+              <h2 class="tour">affordable paris tours</h2>
+              <p class="tour-options">
+                city tours<span>&#47; </span>tour tickets<span>&#47; </span>tour guides
+              </p>
             </div>
           </div>
         </li>

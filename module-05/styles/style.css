@@ -8,9 +8,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 .container {
   width: 1110px;
   margin: 0 auto;
+  position: relative;
 } 
 .navigation {
   padding: 35px 0 30px 0;
@@ -65,21 +71,23 @@ img {
   background-size: cover;
   background-position: center;
 }
-.slider-item-menu button {
+.slider-button {
   background-color: rgba(78, 198, 171, 0.651);
-  position: absolute;
   width: 104px;
   height: 104px;
   border: none;
-}
-.slider-item-menu button img {
-  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .previous {
+  background-image: url(../img/tour/prev.png);
+  position: absolute;
   top: 225px;
   left: 0;
 }
 .next {
+  background-image: url(../img/tour/next.png);
+  position: absolute;
   top: 225px;
   right : 0;
 }
@@ -89,9 +97,9 @@ img {
 }
 .tour-menu {
   position: absolute;
-  top: 50%;
+  top: 207px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%)
 }
 .tour {
   font-family: 'Roboto', sans-serif;
@@ -99,12 +107,13 @@ img {
   color: #ff7200;
   font-size: 60px;
   line-height: 82px;
+  text-transform: uppercase;
   white-space: nowrap;
 }
-.slider :hover .tour{
+.slider-list :hover .tour{
   color: #ffffff;
 }
-.tour-list-item {
+.tour-options {
   display: inline-block;
   text-transform: uppercase;
   color: #ffffff;
@@ -112,11 +121,6 @@ img {
   line-height: 54px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-}
-.tour-list-item-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 .new-collection {
   background-color: #e9f0fd;
