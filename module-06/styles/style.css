@@ -31,26 +31,18 @@ img {
   justify-content: space-between;
 }
 
-.logo {
+.logo-link {
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #95e1d3;
+  transition: color 0.2s linear;
 }
 
-.logo:hover {
+.logo-link:hover {
   color: #f38181
 }
-
-.logo {
-  display: flex;
-}
-
-.logo-part::first-letter {
-  text-transform: uppercase;
-}
-
-/* розумію, що костиль, але я не знаю, як по-іншому зробити букву G верхнім регістром в css */
 
 .navigation-link {
   text-decoration: none;
@@ -59,6 +51,11 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: #95e1d3;
+  transition: color 0.2s linear;
+}
+
+.navigation-item:hover .navigation-link {
+  color: #f38181
 }
 
 .navigation-item::after {
@@ -69,14 +66,13 @@ img {
   height: 3px;
   margin-top: 12px;
   opacity: 0;
-}
-
-.navigation-item:hover .navigation-link {
-  color: #f38181
+  transform: rotateY(90deg);
+  transition: opacity, transform 0.2s linear
 }
 
 .navigation-item:hover::after {
   opacity: 1;
+  transform: rotateY(180deg);
 }
 
 .services, .team {
@@ -108,7 +104,7 @@ img {
 
 .section-tittle::after {
   display: block;
-  background: f38181;
+  background: #f38181;
   content: "";
   width: 60px;
   height: 3px;
@@ -199,6 +195,11 @@ img {
   position: relative;
   transition: transform 0.2s linear;
 }
+
+.team-member:hover .team-member-card {
+  transform: translate(-10px, -10px)
+}
+
 .team-member-card-bottom {
   background: #95e1d3;
   margin-bottom: 30px;
@@ -220,6 +221,11 @@ img {
   transition: opacity 0.2s linear;
 }
 
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+
 .socials {
   display: flex;
   list-style: none
@@ -229,8 +235,13 @@ img {
   width: 56px;
   height: 56px;
   background-repeat: no-repeat;
-  background-color: #fce38a;
   background-position: center;
+  transition: background-color 0.2s linear;
+  background-color: #fce38a;
+}
+
+.social-item:hover {
+  background-color: #95e1d3;;
 }
 
 .social-item:not(:last-child) {
@@ -251,18 +262,6 @@ img {
 
 .instagram {
   background-image: url(../img/team/socials/instagram.png)
-}
-
-.team-member:hover .team-member-card {
-  transform: translate(-10px, -10px)
-}
-
-.team-member:hover .overlay {
-  opacity: 1;
-}
-
-.social-item:hover{
-  background-color: #95e1d3;;
 }
 
 .team-member-name {
@@ -287,5 +286,69 @@ img {
 }
 
 .team {
-  margin-bottom: 85px;
+  padding-bottom: 85px;
+}
+
+.page-footer {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+}
+
+.page-footer::before {
+  display: block;
+  width: 1201px;
+  height: 1px;
+  content: "";
+  background-color: #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+}
+
+.footer-text span {
+  color: #f38181;
+}
+
+.input {
+  display: flex;
+}
+
+.email-input {
+  padding-left: 10px;
+  width: 230px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  border-color: #e5e5e5;
+  border-width: 1px;
+}
+
+.subscribe-button {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  transition: background-color 0.2s linear;
+  border: none;
+}
+
+.subscribe-button:hover {
+  background-color: #f38181;
 }
