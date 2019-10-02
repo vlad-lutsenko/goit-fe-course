@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-sizing {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1201px;
+  margin: 0 auto;
+}
+
+.navigation {
+  align-self: flex-start;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 125px;
+}
+
+.site-navigation {
+  width: 491px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1abc9c;
+}
+.logo:hover {
+  color: #ff0000;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-part::first-letter {
+  text-transform: uppercase;
+}
+
+/* розумію, що костиль, але я не знаю, як по-іншому зробити букву G верхнім регістром в css */
+
+.navigation-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1abc9c;
+}
+
+.navigation-item::after {
+  display: block;
+  background: #ff0000;
+  content: "";
+  width: 50px;
+  height: 3px;
+  margin-top: 12px;
+  opacity: 0;
+}
+
+.navigation-item:hover .navigation-link {
+  color: #ff0000
+}
+
+.navigation-item:hover::after {
+  opacity: 1;
+}
+.main-content {
+  flex-grow: 1;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-intro {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 18px;
+  color: #333333;
+}
+.service-intro::first-letter {
+  text-transform: uppercase;
+}
+
+.service-tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 105px;
+  color: #333333;
+}
+
+.service-tittle::after {
+  display: block;
+  background: #ff0000;
+  content: "";
+  width: 60px;
+  height: 3px;
+  margin: 40px auto 0;
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 100px;
+}
+
+.service-item {
+  flex-basis: 382px;
+  padding-left: 82px;
+}
+
+.service-item-tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.service-item-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.photography {
+  background-image: url(../img/service/clock.png);
+  background-repeat: no-repeat;
+}
+
+.web-design {
+  background-image: url(../img/service/graph.png);
+  background-repeat: no-repeat;
+}
+
+.creativity {
+  background-image: url(../img/service/pc.png);
+  background-repeat: no-repeat;
+}
+
+.seo {
+  background-image: url(../img/service/book.png);
+  background-repeat: no-repeat;
+}
+
+.css {
+  background-image: url(../img/service/home.png);
+  background-repeat: no-repeat;
+}
+
+.digital {
+  background-image: url(../img/service/image.png);
+  background-repeat: no-repeat;
+}
+
