@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.page-sizing {
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 .container {
   width: 1201px;
@@ -36,6 +31,7 @@
   font-size: 30px;
   color: #1abc9c;
 }
+
 .logo:hover {
   color: #ff0000;
 }
@@ -76,36 +72,39 @@
 .navigation-item:hover::after {
   opacity: 1;
 }
+
 .main-content {
   flex-grow: 1;
 }
-.services {
+
+.services, .team {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.service-intro {
+.intro {
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 18px;
   color: #333333;
 }
-.service-intro::first-letter {
+
+.intro::first-letter {
   text-transform: uppercase;
 }
 
-.service-tittle {
+.section-tittle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 30px;
-  margin-bottom: 105px;
+  margin-bottom: 65px;
   color: #333333;
 }
 
-.service-tittle::after {
+.section-tittle::after {
   display: block;
   background: #ff0000;
   content: "";
@@ -119,6 +118,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 90px;
 }
 
 .service-item:not(:nth-last-child(-n+3)) {
@@ -174,5 +174,16 @@
 .digital {
   background-image: url(../img/service/image.png);
   background-repeat: no-repeat;
+}
+
+.team-description {
+  width: 1000px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 85px;
 }
 
