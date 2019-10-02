@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1201px;
   margin: 0 auto;
@@ -29,11 +35,11 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: #1abc9c;
+  color: #95e1d3;
 }
 
 .logo:hover {
-  color: #ff0000;
+  color: #f38181
 }
 
 .logo {
@@ -52,12 +58,12 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #1abc9c;
+  color: #95e1d3;
 }
 
 .navigation-item::after {
   display: block;
-  background: #ff0000;
+  background: #f38181;
   content: "";
   width: 50px;
   height: 3px;
@@ -66,15 +72,11 @@
 }
 
 .navigation-item:hover .navigation-link {
-  color: #ff0000
+  color: #f38181
 }
 
 .navigation-item:hover::after {
   opacity: 1;
-}
-
-.main-content {
-  flex-grow: 1;
 }
 
 .services, .team {
@@ -106,7 +108,7 @@
 
 .section-tittle::after {
   display: block;
-  background: #ff0000;
+  background: f38181;
   content: "";
   width: 60px;
   height: 3px;
@@ -187,3 +189,103 @@
   margin-bottom: 85px;
 }
 
+.team-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member-card {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+.team-member-card-bottom {
+  background: #95e1d3;
+  margin-bottom: 30px;
+}
+
+.overlay {
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.8), rgb(251, 226, 135, 0.8)
+  );
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.socials {
+  display: flex;
+  list-style: none
+}
+
+.social-item {
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-color: #fce38a;
+  background-position: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.facebook {
+  background-image: url(../img/team/socials/facebook.png);
+}
+
+.twitter {
+  background-image: url(../img/team/socials/twitter.png);
+}
+
+.p-interest {
+  background-image: url(../img/team/socials/pinterest.png);
+}
+
+.instagram {
+  background-image: url(../img/team/socials/instagram.png)
+}
+
+.team-member:hover .team-member-card {
+  transform: translate(-10px, -10px)
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.social-item:hover{
+  background-color: #95e1d3;;
+}
+
+.team-member-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.team-member-speciality {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team {
+  margin-bottom: 85px;
+}
