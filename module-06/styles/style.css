@@ -132,6 +132,12 @@ img {
 .service-item {
   flex-basis: 382px;
   padding-left: 82px;
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.service-item:hover::after {
+  transform: rotate(360deg);
 }
 
 .service-item-tittle {
@@ -150,34 +156,94 @@ img {
   color: #999999;
 }
 
-.photography {
+.photography::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/clock.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
-.web-design {
+.web-design::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/graph.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
-.creativity {
+.creativity::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/pc.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
-.seo {
+.seo::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/book.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
-.css {
+.css::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/home.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
-.digital {
+.digital::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
   background-image: url(../img/service/image.png);
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
 }
 
 .team-description {
