@@ -49,15 +49,27 @@
       </ul>
     </section>
     <section class="contact-section">
-      <h2 class="section-tittle">contact us</h2>
-      <p class="section-description">Proin iaculis purus consequat sem cure.</p>
-      <form action="#" class="feedback">
-        <input type="text" placeholder="your name*">
-        <input type="email" name="email" id="email" placeholder="your email*">
-        <input type="text" placeholder="subject">
-        <textarea name="" id=""></textarea>
-        <button>send message</button>
-      </form>
+      <div class="container">
+        <h2 class="section-tittle">contact us</h2>
+        <p class="section-description">Proin iaculis purus consequat sem cure.</p>
+        <form action="#" class="feedback">
+          <ul class="columns">
+            <li>
+              <input type="text" name="user_name" class="first-column" placeholder="your name*" required>
+            </li>
+            <li>
+              <input type="email" name="user_email" class="first-column" placeholder="your email*" required>
+            </li>
+            <li>
+              <input type="text" name="feedback_subject" class="first-column" placeholder="subject" autocomplete="none">
+            </li>
+            <li>
+              <textarea class="texting" name="feedback_text" placeholder="your message*" required></textarea>
+            </li>
+          </ul>
+          <button class="button">send message</button>
+        </form>
+      </div>
     </section>
 
   </main>
