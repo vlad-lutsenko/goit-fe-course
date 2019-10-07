@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Petit Formal Script';
+  src: url(fonts/petit-formal-script-v7-latin-regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-tittle {
+  font-family: 'Petit Formal Script', cursive;
+  text-transform: capitalize;
+  font-size: 26px;
+  color: #fed136;
+}
+
+.navigation-list {
+  display: flex;
+  width: 485px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation-list-item {
+  display: block;
+}
+
+.navigation-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.navigation-link:hover {
+  color: #fed136;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/montserrat-v14-latin-regular.woff) format('woff')  
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/montserrat-v14-latin-700.woff) format('woff')
+}
