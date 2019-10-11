@@ -55,7 +55,8 @@
   padding-top: 50px;
 }
 
-.page-tittle {
+.page-tittle-link {
+  text-decoration: none;
   font-family: 'Petit Formal Script', cursive;
   text-transform: capitalize;
   font-size: 26px;
@@ -74,6 +75,7 @@
 }
 
 .navigation-link {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -239,6 +241,10 @@
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .columns input[type='email']:required:invalid, .columns input[type='text']:required:invalid {
