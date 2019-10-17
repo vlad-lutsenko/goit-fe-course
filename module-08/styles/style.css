@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 320px;
+}
+
+.navigation {
+  height: 540px;
+  background: url(../images/bgrd-mobile.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-list {
+  order: -1;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
