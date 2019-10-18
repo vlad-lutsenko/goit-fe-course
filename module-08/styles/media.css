@@ -1,13 +1,97 @@
-html {
-  box-sizing: border-box;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .page-header {
+      height: 700px;
+      background-image: url(../images/bgrd-tablet.jpg);
+  }
+
+  .navigation {
+    padding: 50px 50px 125px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation-list {
+    order: 1;
+    padding: 0;
+  }
+
+  .header-tittle {
+    font-size: 52px;
+    line-height: 62px;
+    padding: 0 130px;
+  }
+
+  .header-text {
+    font-size: 24px;
+    padding: 40px 0 35px;
+  }  
+
+  .header-button {
+    width: 225px;
+  }
+
+  .partner {
+    padding: 0 138px;
+  }
+
+  .partner-tittle {
+    padding-bottom: 40px;
+  }
+
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .order-lucas {
+    order: 2;
+  }
+
+  .order-bradley {
+    order: 3;
+  }
+
+  .partners-list-item:nth-child(2n-1) {
+    margin-bottom: 60px;
+  }
+
+  .partners-list {
+    margin-bottom: 35px;
+  }
+
+  .main-button{ 
+    width: 192px;
+  }
+
 }
 
+@media screen and (min-width: 940px) {
 
-/* .Rectangle_1 {
-  background-color: rgb(26, 25, 21);
+  .container {
+    width: 940px;
+  }
 
-} */
+  .page-header {
+    background-image: url(../images/bgrd-desktop.jpg);
+  }
 
-.container {
-  width: 380px;
+  .navigation {
+    padding:50px 0 160px;
+  }
+
+  .header-tittle {
+    padding: 0 215px;
+  }
+
+  .partner {
+    padding: 0;
+  }
+  
+  .partners-list-item {
+    width: 220px;
+  }
 }

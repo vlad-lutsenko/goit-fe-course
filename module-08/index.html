@@ -8,53 +8,66 @@
   <title>homework-08</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body>
-  <header class="container">
-    <nav class="navigation">
-      <h1 class="logo">
-        <a href="#" class="logo-link">URLAUBSGLÜCK</a>
-      </h1>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a href="" class="navigation-item-link">Log in</a>
-        </li>
-        <li class="navigation-item">
-          <a href="" class="navigation-item-link">Sign up</a>
-        </li>
-      </ul>
+  <header class="page-header">
+    <div class="container">
+      <nav class="navigation">
+        <h1 class="logo">
+          <a href="#" class="logo-link">URLAUBSGLÜCK</a>
+        </h1>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="" class="navigation-item-link log-in">log in</a>
+          </li>
+          <li class="navigation-item">
+            <a href="" class="navigation-item-link sign-up">sign up</a>
+          </li>
+        </ul>
+      </nav>
       <h2 class="header-tittle">Share your holiday dreams</h2>
       <p class="header-text">And find the perfect partner to fullfill it</p>
       <button class="header-button">Find your holiday partner</button>
-    </nav>
+    </div>
   </header>
   <main class="container">
-      <h2 class="main-tittle">Meet a partner for your best holiday</h2>
+    <section class="partner">
+      <h2 class="partner-tittle">Meet a partner for your best holiday</h2>
       <ul class="partners-list">
-        <li class="partners-list-item">
-          <img src="images/partners/Hunter.png" alt="Bradley Hunter" class="partners-image">
+        <li class="partners-list-item  order-hunter">
+          <div class="partners-image hunter">
+            <img src="images/partners/Hunter.png" alt="Bradley Hunter">
+          </div>
           <h3 class="partners-name">Bradley Hunter</h3>
           <p class="parnters-description">Based in Chicago. I love playing tennis and loud music.</p>
         </li>
-        <li class="partners-list-item">
-          <img src="images/partners/Lucas.png" alt="Lucas Marsha" class="partners-image">
+        <li class="partners-list-item order-lucas">
+          <div class="partners-image lucas">
+            <img src="images/partners/Lucas.png" alt="Lucas Marsha">
+          </div>
           <h3 class="partners-name">Lucas Marsha</h3>
           <p class="parnters-description">I get my inspiration from nature and objects around me. I have a passion to
             colours, typography and skateboards.</p>
         </li>
-        <li class="partners-list-item">
-          <img src="images/partners/Heather.png" alt="Heather Walker" class="partners-image">
+        <li class="partners-list-item order-heather">
+          <div class="partners-image heather">
+            <img src="images/partners/Heather.png" alt="Heather Walker">
+          </div>
           <h3 class="partners-name">Heather Walker</h3>
           <p class="parnters-description">I'm a happy person that loves cats and climbing on mountains.</p>
         </li>
-        <li class="partners-list-item">
-          <img src="images/partners/Bradley.png" alt="Bradley Hunter" class="partners-image">
+        <li class="partners-list-item order-bradley">
+          <div class="partners-image bradley">
+            <img src="images/partners/Bradley.png" alt="Bradley Hunter">
+          </div>
           <h3 class="partners-name">Bradley Hunter</h3>
           <p class="parnters-description">Based in Chicago. I love playing tennis and loud music.</p>
         </li>
       </ul>
       <button class="main-button">See other partners</button>
+    </section>
   </main>
   <footer></footer>
 </body>
