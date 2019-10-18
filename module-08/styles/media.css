@@ -47,6 +47,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .parnters-description {
+    padding: 0 10px;
+  }
+
   .order-lucas {
     order: 2;
   }
@@ -91,6 +96,10 @@
     padding: 0;
   }
   
+  .parnters-description {
+    padding: 0;
+  }
+
   .partners-list-item {
     width: 220px;
   }
