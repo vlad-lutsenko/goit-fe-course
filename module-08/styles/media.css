@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 748px;
   }
 
   .page-header {
@@ -77,11 +77,12 @@
 @media screen and (min-width: 940px) {
 
   .container {
-    width: 940px;
+    width: 920px;
   }
 
   .page-header {
     background-image: url(../images/bgrd-desktop.jpg);
+    background-size: cover;
   }
 
   .navigation {
