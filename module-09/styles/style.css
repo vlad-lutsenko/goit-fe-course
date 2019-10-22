@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url(../images/bgrd-mobile-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+}
+
+.logo-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.registration-list {
+  display: flex;
+  list-style: none;
+}
+
+.reg-list-item::first-letter {
+  text-transform: uppercase;
+}
+
+.registration-item-link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.sign-up {
+  border: solid 2px;
+  border-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.header-tittle {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.header-text {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding:15px 50px;
+}
+
+.header-button {
+  width: 280px;
+  height: 40px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  border: none;
+}
+
+.partner {
+  text-align: center;
+}
+
+.partner-tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 72px 0 20px;
+  color: #333333;
+}
