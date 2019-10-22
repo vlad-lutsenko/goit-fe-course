@@ -4,26 +4,26 @@
   margin: 0;
 }
 
-header {
-  background-image: url(../images/bgrd-mobile-min.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 540px;
-}
-
 .logo-link {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  line-height: 24px;
   color: #ffffff;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
 }
 
 .registration-list {
   display: flex;
   list-style: none;
+  width: 155px;
+  padding-top: 30px;
 }
 
 .reg-list-item::first-letter {
@@ -51,9 +51,10 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
+  letter-spacing: 0;
   line-height: 36px;
   text-align: center;
-  padding-top: 35px;
+  padding: 35px 0 0;
 }
 
 .header-text {
@@ -63,7 +64,7 @@ header {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  padding:15px 50px;
+  padding: 0 35px 0;
 }
 
 .header-button {
@@ -92,3 +93,96 @@ header {
   padding: 72px 0 20px;
   color: #333333;
 }
+
+.partners-name {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333333;
+  padding: 20px 0 20px;
+}
+
+.parnters-description {
+  padding: 0 0 25px;
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.partners-image {
+  position: relative;
+  display: block;
+  width: 121px;
+  height: 121px;
+  margin: 0 auto;
+}
+
+.hunter::after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-image: url(../images/icons/tv-min.jpg);
+  background-position: center;
+  position: absolute;
+  border-radius: 41px;
+  right: 0;
+  bottom: 0;
+}
+
+.lucas::after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-image: url(../images/icons/colb-min.jpg);
+  background-position: center;
+  position: absolute;
+  border-radius: 41px;
+  right: 0;
+  bottom: 0;
+}
+
+.heather::after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-image: url(../images/icons/cup-min.jpg);
+  background-position: center;
+  position: absolute;
+  border-radius: 41px;
+  right: 0;
+  bottom: 0;
+}
+
+.bradley::after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-image: url(../images/icons/tgram-min.png);
+  background-position: center;
+  position: absolute;
+  border-radius: 41px;
+  right: 0;
+  bottom: 0;
+}
+
+.main-button {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  border:solid 2px #ff4e50;;
+  color: #ff4e50;
+  background: transparent;
+  margin-bottom: 55px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+

@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/bootstrap-grid.css">
+  <link rel="stylesheet" href="styles/bootstrap-grid-customized.css">
   <link rel="stylesheet" href="styles/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/media.css">
 
   <title>homework-09</title>
 </head>
 
 <body>
-  <header>
+  <header class="page-header">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
@@ -23,14 +24,15 @@
           </h1>
         </div>
         <div class="col-12 col-md-6 col-lg-6 registration">
-          <ul class="registration-list justify-content-around">
+          <ul class="registration-list justify-content-between">
             <li class="reg-list-item"><a href="#" class="registration-item-link log-in">log in</a></li>
             <li class="reg-list-item"><a href="#" class="registration-item-link sign-up">sign up</a></li>
           </ul>
         </div>
+      </div>
+      <div class="row">
         <div class="col-12">
-          <h2 class="header-tittle">Share your
-            holiday dreams</h2>
+          <h2 class="header-tittle">Share your holiday dreams</h2>
         </div>
         <div class="col-12">
           <p class="header-text">And find the perfect partner to fullfill it</p>
@@ -40,10 +42,10 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container partner-list">
       <div class="row">
         <div class="col-12">
-          <h2>Meet a partner for your best holiday</h2>
+          <h2 class="partner-tittle">Meet a partner for your best holiday</h2>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <div class="partners-image hunter">
@@ -52,7 +54,7 @@
           <h3 class="partners-name">Bradley Hunter</h3>
           <p class="parnters-description">Based in Chicago. I love playing tennis and loud music.</p>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 order-lucas">
           <div class="partners-image lucas">
             <img src="images/partners/Lucas-min.png" alt="Lucas Marsha">
           </div>
@@ -67,13 +69,15 @@
           <h3 class="partners-name">Heather Walker</h3>
           <p class="parnters-description">I'm a happy person that loves cats and climbing on mountains.</p>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 order-bradley">
           <div class="partners-image bradley">
             <img src="images/partners/Bradley-min.png" alt="Bradley Hunter">
           </div>
           <h3 class="partners-name">Bradley Hunter</h3>
           <p class="parnters-description">Based in Chicago. I love playing tennis and loud music.</p>
         </div>
+      </div>
+      <div class="row">
         <div class="col-12">
           <button class="main-button">See other partners</button>
         </div>
