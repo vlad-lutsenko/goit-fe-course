@@ -1,21 +1,10 @@
 @media (max-width: 767px) {
-  .registration {
-    order: -1;
-  }
-
-  .logo {
-    padding-top: 84px;
-  }
-
+ 
   .page-header {
     background-image: url(../images/bgrd-mobile-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 540px;
-  }
-
-  .parnters-description {
-    padding: 0 45px 25px;
   }
  
 }
@@ -30,42 +19,18 @@
 
   .logo {
     text-align: left;
-    padding-top: 10px;
-  }
-
-  .registration {
-    justify-content: flex-end;
   }
 
   .header-tittle {
     font-size: 52px;
-    line-height: 62px;
-    padding: 160px 100px 0;
   }
 
   .header-text {
     font-size: 24px;
-    padding: 40px 0 35px;
   }  
 
   .header-button {
     width: 225px;
-  }
-
-  .partner {
-    padding: 0 138px;
-  }
-
-  .partner-tittle {
-    padding-bottom: 40px;
-  }
-  
-  .order-lucas {
-    order: 2;
-  }
-
-  .order-bradley {
-    order: 3;
   }
 }
 

@@ -2561,6 +2561,31 @@ html {
   padding-left: 1.5rem !important;
 }
 
+.p-4-5 {
+  padding: 2rem !important;
+}
+
+.pt-4-5,
+.py-4-5 {
+  padding-top: 2rem !important;
+}
+
+.pr-4-5,
+.px-4-5 {
+  padding-right: 2rem !important;
+}
+
+.pb-4-5,
+.py-4-5 {
+  padding-bottom: 2rem !important;
+}
+
+.pl-4-5,
+.px-4-5 {
+  padding-left: 2rem !important;
+}
+
+
 .p-5 {
   padding: 3rem !important;
 }
@@ -2583,6 +2608,11 @@ html {
 .pl-5,
 .px-5 {
   padding-left: 3rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 5rem !important;
 }
 
 .m-n1 {
@@ -3284,10 +3314,6 @@ html {
     margin-left: 1.5rem !important;
   }
 
-  .m-md-5 {
-    margin: 3rem !important;
-  }
-
   .mt-md-5,
   .my-md-5 {
     margin-top: 3rem !important;
@@ -3307,6 +3333,26 @@ html {
   .mx-md-5 {
     margin-left: 3rem !important;
   }
+
+  .ml-md-4-5,
+  .mx-md-4-5 {
+    margin-left: 2rem !important;
+  }
+  .mt-md-4-5,
+  .my-md-4-5 {
+    margin-top: 2rem !important;
+  }
+
+  .mr-md-4-5,
+  .mx-md-4-5 {
+    margin-right: 2rem !important;
+  }
+
+  .mb-md-4-5,
+  .my-md-4-5 {
+    margin-bottom: 2rem !important;
+  }
+
 
   .p-md-0 {
     padding: 0 !important;
@@ -3427,6 +3473,30 @@ html {
   .px-md-4 {
     padding-left: 1.5rem !important;
   }
+  
+  .p-md-4-5 {
+    padding: 2rem !important;
+  }
+
+  .pt-md-4-5,
+  .py-md-4-5 {
+    padding-top: 2rem !important;
+  }
+
+  .pr-md-4-5,
+  .px-md-4-5 {
+    padding-right: 2rem !important;
+  }
+
+  .pb-md-4-5,
+  .py-md-4-5 {
+    padding-bottom: 2rem !important;
+  }
+
+  .pl-md-4-5,
+  .px-md-4-5 {
+    padding-left: 2rem !important;
+  }
 
   .p-md-5 {
     padding: 3rem !important;
@@ -3450,6 +3520,21 @@ html {
   .pl-md-5,
   .px-md-5 {
     padding-left: 3rem !important;
+  }
+
+  .px-md-8 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .py-md-8,
+  .pt-md-8 {
+    padding-top: 8rem !important;
+  }
+
+  .px-md-12 {
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   .m-md-n1 {
@@ -3884,6 +3969,26 @@ html {
   .pl-lg-5,
   .px-lg-5 {
     padding-left: 3rem !important;
+  }
+
+  .pt-lg-15,
+  .py-lg-15 {
+    padding-top: 15rem !important;
+  }
+
+  .pr-lg-15,
+  .px-lg-16 {
+    padding-right: 16rem !important;
+  }
+
+  .pb-lg-15,
+  .py-lg-15 {
+    padding-bottom: 15rem !important;
+  }
+
+  .pl-lg-15,
+  .px-lg-16 {
+    padding-left: 16rem !important;
   }
 
   .m-lg-n1 {
