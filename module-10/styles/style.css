@@ -432,6 +432,7 @@ img {
 }
 
 .social-item {
+  display: block;
   width: 56px;
   height: 56px;
   text-align: center;
