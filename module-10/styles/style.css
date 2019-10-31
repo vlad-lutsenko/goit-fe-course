@@ -435,8 +435,9 @@ img {
   display: block;
   width: 56px;
   height: 56px;
-  text-align: center;
-  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
@@ -447,8 +448,15 @@ img {
   background-color: #f38181;
 }
 
-.social-link:hover .soclog {
+.social-item:hover .social-link svg {
   fill: #ffffff;
+}
+
+.social-link svg {
+  display: block;
+  width: 100%;
+  height: 32px;
+  fill: #f38181;
 }
 
 .social-item:not(:last-child) {
