@@ -1,0 +1,24 @@
+page-header
+navigation
+site-navigation
+  site-navigation__item
+  site-navigation__link
+section-tittle
+  section-tittle--header
+  section-tittle--main
+intro 
+  intro--header
+button
+  button--header
+  button--footer
+section
+service
+service-item
+team-list
+team-member
+  team-member__card-base
+  team-member__name
+  team-member__speciality
+team-member-card
+social-item
+  social-item__link
