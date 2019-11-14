@@ -1,0 +1,36 @@
+.team-member:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.team-member__name {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.team-member__speciality {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-text-color;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team-member:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.team-member:hover .team-member-card {
+  transform: translate(-10px, -10px)
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}

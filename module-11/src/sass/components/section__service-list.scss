@@ -1,0 +1,6 @@
+.section__service-list {
+  @extend %list;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}

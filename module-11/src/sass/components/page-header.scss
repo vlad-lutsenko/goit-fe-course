@@ -1,0 +1,26 @@
+.page-header {
+  height: 1000px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/banner@2x.jpg);
+  }
+}
+
+.page-header__tittle {
+  @extend %tittle;
+  color: $header-text-color;
+  font-size: 150px;
+  line-height: 140px;
+  padding: 170px 190px 125px;
+}
+
+.page-header__intro {
+  @extend %intro;
+  color: $header-text-color;
+  font-size: 72px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,28 @@
+%tittle {
+  font-family: $main-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%intro {
+  display: block;
+  font-family: $curved-font;
+  font-weight: 400;
+}
+
+%button {
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $header-text-color;
+  cursor: pointer;
+}
+
+%list {
+  list-style: none;
+  display: flex;
+}

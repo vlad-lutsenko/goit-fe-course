@@ -1,0 +1,135 @@
+.section__service-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 382px;
+  padding-left: 82px;
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.section__service-item:hover::after {
+  transform: rotate(360deg);
+}
+
+.section__service-item:not(:nth-last-child(-n+3)) {
+  padding-bottom: 100px;
+}
+
+.service-item__tittle {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  padding-bottom: 20px;
+}
+
+.service-item__description {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-text-color;
+}
+
+.section__service-item--photography::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/clock@2x.png);}
+}
+
+.section__service-item--web-design::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/graph.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/graph@2x.png);}
+}
+
+.section__service-item--creativity::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/pc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/pc@2x.png);}
+}
+
+.section__service-item--seo::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/book.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/book@2x.png);}
+}
+
+.section__service-item--css::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/home@2x.png);}
+}
+
+.section__service-item--digital::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  background-image: url(../images/service/image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s linear;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/service/image@2x.png);}
+}

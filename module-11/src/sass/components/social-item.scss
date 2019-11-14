@@ -1,0 +1,29 @@
+.social-item {
+  display: block;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s linear;
+  background-color: $text-hover-color;
+
+  &:hover {
+    background-color: $tittle-underline-color;
+
+    & .social-item__link svg {
+      fill: $header-text-color;
+    }
+  }
+}
+
+.social-item__link svg {
+  display: block;
+  width: 100%;
+  height: 32px;
+  fill: $tittle-underline-color;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 1px;
+}

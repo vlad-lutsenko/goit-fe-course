@@ -1,7 +1,39 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import 'variables';
+
+ // helpers
+
+@import 'helpers/variables';
+@import 'helpers/plaseholders';
+
 
 @import 'normalize';
 @import 'base';
+
+// COMPONENTS
+
+// header
+@import 'components/container';
+@import 'components/page-header';
+@import 'components/navigation';
+@import 'components/site-navigation';
+@import 'components/logo__link';
+@import 'components/page-header__button';
+
+// section-service
+
+@import 'components/section';
+@import 'components/section__tittle';
+@import 'components/section__service-list';
+@import 'components/service-item';
+
+//section-team
+
+@import 'components/team-list';
+@import 'components/team-member';
+@import 'components/team-member-card';
+@import 'components/overlay';
+@import 'components/social-list';
+@import 'components/social-item';
+@import 'components/page-footer';

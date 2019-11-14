@@ -1,0 +1,14 @@
+.logo__link {
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 30px;
+  color: $header-text-color;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: $text-hover-color
+  }
+}

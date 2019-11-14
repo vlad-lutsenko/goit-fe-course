@@ -1,0 +1,13 @@
+.overlay {
+  background-image: linear-gradient(rgba(243, 129, 129, 0.8), rgba(251, 226, 135, 0.8));
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}

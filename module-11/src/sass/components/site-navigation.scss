@@ -1,0 +1,37 @@
+.site-navigation {
+  @extend %list;
+  width: 491px;
+  justify-content: space-between;
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $header-text-color;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $text-hover-color
+    }
+  }
+}
+
+.site-navigation__item::after {
+  display: block;
+  background: $text-hover-color;
+  content: "";
+  min-width: 40px;
+  height: 3px;
+  margin-top: 12px;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity, transform 0.2s linear;
+}
+
+.site-navigation__item:hover::after {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
